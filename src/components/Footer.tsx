@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-slate-100 p-3 pt-16 text-black">
-      <div className="content container mx-auto grid grid-cols-2">
+      <div className="content max-w-7xl mx-auto grid grid-cols-2">
         <div className="content flex flex-wrap font-medium">
           <div className="flex basis-1/2 flex-wrap">
             <span className="mb-2 basis-full text-gray-600">Services</span>
@@ -48,10 +48,10 @@ export default function Footer() {
           <h1>Hızlı Güvenli Teslimat</h1>
         </div>
       </div>
-      <div className="container mx-auto pt-12 pb-3">
+      <div className="max-w-7xl mx-auto pt-12 pb-3">
         <hr />
       </div>
-      <div className="content container mx-auto flex justify-between py-4">
+      <div className="content max-w-7xl mx-auto flex justify-between py-4">
         <div className="logo brand">
           <h1 className="">HGT</h1>
         </div>

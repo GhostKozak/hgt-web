@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="hero relative z-0 min-h-dvh pt-40">
-      <div className="container mx-auto flex">
+      <div className="max-w-7xl mx-auto flex">
         <div className="content">
           <h1 className="mb-6 text-6xl font-medium">
             Swift delivery,
@@ -22,7 +22,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="video-container absolute top-0 left-0 -z-10 h-dvh w-full before:absolute before:left-0 before:h-full before:w-full before:bg-black/40 before:to-0%">
+      <div className="video-max-w-7xl absolute top-0 left-0 -z-10 h-dvh w-full before:absolute before:left-0 before:h-full before:w-full before:bg-black/40 before:to-0%">
         <video
           src="/hero-background.mp4"
           autoPlay

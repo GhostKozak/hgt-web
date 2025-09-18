@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header className="fixed z-10 w-full p-3">
-      <div className="content container mx-auto flex justify-between rounded-b-md bg-white p-5">
+      <div className="content max-w-7xl mx-auto flex justify-between rounded-b-md bg-white p-5">
         {/* Logo */}
         <div className="logo brand flex content-center justify-center">
           <h1 className="flex content-center justify-center align-middle text-black">
@@ -65,7 +65,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {mobileNavToggle && (
-        <div className="relative -top-1 container mx-auto">
+        <div className="relative -top-1 max-w-7xl mx-auto">
           <nav className="absolute w-full border-t border-gray-200 bg-white shadow-md lg:hidden">
             <ul className="flex flex-col p-4">
               {navItems.map((item) => (
