@@ -1,28 +1,182 @@
+import Image from "next/image";
+import ListAnchor from "./list-anchor";
+
 export default function Hero() {
   return (
-    <div className="hero relative z-0 h-min min-h-3/4 pt-56 pb-32">
-      <div className="mx-auto flex max-w-7xl">
-        <div className="content">
-          <h1 className="mb-6 text-6xl font-medium">
-            Swift delivery,
-            <br /> smart logistics.
-          </h1>
-          <p className="mb-6 text-2xl font-medium">
-            Efficient logistics solutions, ensuring
-            <br /> seamless transportation and supply
-            <br /> chain management.
-          </p>
-          <div className="font-semibold">
-            <span>In air</span>
-            <span>At sea</span>
-            <span>On road</span>
+    <section className="hero relative z-0 flex min-h-[60dvh] flex-col gap-16 overflow-hidden bg-stone-50 px-5 pt-56 pb-32">
+      <div className="container mx-auto flex px-1 lg:px-0">
+        <div className="content flex w-full flex-wrap-reverse items-end justify-between lg:flex-nowrap">
+          <div className="flex flex-col items-start gap-6">
+            <p className="text-2xl font-medium lg:text-3xl">
+              Efficient logistics solutions, ensuring
+              <br /> seamless transportation and supply
+              <br /> chain management.
+            </p>
+            <div className="font-semibol flex items-start gap-8">
+              <span className="inline-flex items-center gap-2">
+                <ListAnchor />
+                In air
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <ListAnchor />
+                At sea
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <ListAnchor />
+                On road
+              </span>
+            </div>
+            <a
+              href="../services"
+              className="inline-flex gap-20 rounded-full bg-yellow-200 px-7 py-3.5 font-medium text-black"
+            >
+              Our Service
+              <Image
+                src={"/arrow.svg"}
+                alt=""
+                width={24}
+                height={24}
+                className="inline-block"
+              />
+            </a>
           </div>
-          <a href="#" className="font-semibold">
-            Our Service
-          </a>
+          <div className="contents">
+            <h1 className="mb-6 text-5xl font-medium lg:mb-0 lg:text-right lg:text-7xl xl:text-8xl">
+              Swift delivery,
+              <br /> smart logistics.
+            </h1>
+          </div>
         </div>
       </div>
-      <div className="video-max-w-7xl absolute top-0 left-0 -z-10 h-dvh w-full before:absolute before:left-0 before:h-full before:w-full before:bg-black/40 before:to-0%">
+      <div className="container mx-auto">
+        <div className="flex flex-wrap justify-center gap-2.5 rounded-2xl bg-white p-5 shadow md:p-12">
+          <div className="group flex min-w-72 shrink-0 grow basis-0 cursor-pointer flex-col justify-between gap-8 rounded-lg border border-neutral-200 bg-stone-100 text-black">
+            <div className="flex min-h-60 flex-col items-start justify-between gap-3 p-8 pb-0">
+              <div className="flex flex-col content-start gap-3.5">
+                <div className="flex flex-col content-start gap-3">
+                  <Image src={"/car.svg"} alt="" width={50} height={50} />
+                  <h5 className="text-2xl font-medium text-stone-900">
+                    Freight Transportation
+                  </h5>
+                </div>
+                <p className="text-base font-normal text-neutral-500">
+                  Reliable and efficient transport solutions for goods of all
+                  sizes, ensuring timely and secure deliveries.
+                </p>
+              </div>
+              <button
+                type="button"
+                className="inline-flex gap-5 border-b py-1 text-base font-semibold"
+              >
+                Let's work together
+                <Image
+                  src={"/arrow.svg"}
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="transition-all ease-in group-hover:rotate-45"
+                />
+              </button>
+            </div>
+            <div className="h-40 overflow-hidden rounded-b-lg">
+              <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">
+                <Image
+                  src={"/grid-1.jpg"}
+                  alt="Thumbnail"
+                  width={1920}
+                  height={1080}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="h-full w-full object-cover object-[43%_30.7%]"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="group flex min-w-72 shrink-0 grow basis-0 cursor-pointer flex-col justify-between gap-8 rounded-lg border border-neutral-200 bg-stone-100 text-black">
+            <div className="flex min-h-60 flex-col items-start justify-between gap-3 p-8 pb-0">
+              <div className="flex flex-col content-start gap-3">
+                <div className="flex flex-col content-start gap-3.5">
+                  <Image src={"/warehouse.svg"} alt="" width={50} height={50} />
+                  <h5 className="text-2xl font-medium text-stone-900">
+                    Warehousing & distribution
+                  </h5>
+                </div>
+                <p className="text-base font-normal text-neutral-500">
+                  Streamlined storage and distribution services to optimize your
+                  supply chain.
+                </p>
+              </div>
+              <button
+                type="button"
+                className="inline-flex gap-5 border-b py-1 text-base font-semibold"
+              >
+                Let's work together
+                <Image
+                  src={"/arrow.svg"}
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="transition-all ease-in group-hover:rotate-45"
+                />
+              </button>
+            </div>
+            <div className="h-40 overflow-hidden rounded-b-lg">
+              <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">
+                <Image
+                  src={"/grid-2.jpg"}
+                  alt="Thumbnail"
+                  width={1920}
+                  height={1080}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="group flex min-w-72 shrink-0 grow basis-0 cursor-pointer flex-col justify-between gap-8 rounded-lg border border-neutral-200 bg-stone-100 text-black">
+            <div className="flex min-h-60 flex-col items-start justify-between gap-3 p-8 pb-0">
+              <div className="flex flex-col content-start gap-3">
+                <div className="flex flex-col content-start gap-3.5">
+                  <Image src={"/logistic.svg"} alt="" width={50} height={50} />
+                  <h5 className="text-2xl font-medium text-stone-900">
+                    Custom logistics solutions
+                  </h5>
+                </div>
+                <p className="text-base font-normal text-neutral-500">
+                  Tailored services to meet the unique transportation and
+                  logistics needs of your business.
+                </p>
+              </div>
+              <button
+                type="button"
+                className="inline-flex gap-5 border-b py-1 text-base font-semibold"
+              >
+                Let's work together
+                <Image
+                  src={"/arrow.svg"}
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="transition-all ease-in group-hover:rotate-45"
+                />
+              </button>
+            </div>
+            <div className="h-40 overflow-hidden rounded-b-lg">
+              <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">
+                <Image
+                  src={"/grid-3.jpg"}
+                  alt="Thumbnail"
+                  width={1920}
+                  height={1080}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="video-container absolute top-0 left-0 -z-10 h-[70%] w-full px-1 lg:px-0">
+        <div className="absolute top-0 left-0 z-10 h-full w-full bg-black/50"></div>
         <video
           src="/hero-background.mp4"
           autoPlay
@@ -34,6 +188,6 @@ export default function Hero() {
           poster="https://framerusercontent.com/images/KSM5xSWcEga3lSTWK61Uk8WBys.jpg"
         ></video>
       </div>
-    </div>
+    </section>
   );
 }

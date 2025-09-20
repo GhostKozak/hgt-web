@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -13,20 +14,25 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed z-10 w-full p-3">
-      <div className="content max-w-7xl mx-auto flex justify-between rounded-b-md bg-white p-5">
+    <header className="fixed z-10 w-full p-5">
+      <div className="content container mx-auto flex justify-between rounded-b-md bg-white p-5">
         {/* Logo */}
         <div className="logo brand flex content-center justify-center">
           <h1 className="flex content-center justify-center align-middle text-black">
-            <img
-              src="https://framerusercontent.com/images/HXA1ecuB66Rl3hz4pQ0mjjLfNVo.svg"
+            <Image
+              src={
+                "https://framerusercontent.com/images/HXA1ecuB66Rl3hz4pQ0mjjLfNVo.svg"
+              }
               alt=""
+              width={98}
+              height={28}
             />
           </h1>
         </div>
 
         {/* Mobile Hamburger Menu Button */}
-        <div
+        <button
+          type="button"
           className="mobile-nav-toggle cursor-pointer lg:hidden"
           onClick={() => setMobileNavToggle(!mobileNavToggle)}
         >
@@ -44,16 +50,16 @@ export default function Header() {
               <span className="absolute top-1/2 right-0 h-0.5 w-6 -translate-y-1/2 -rotate-45 bg-black"></span>
             </div>
           )}
-        </div>
+        </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:block">
+        <nav className="hidden h-min lg:block">
           <ul className="flex gap-4">
             {navItems.map((item) => (
               <li key={item.id}>
                 <a
                   href={item.link}
-                  className="text-black transition-all ease-linear hover:text-gray-700"
+                  className="text-base font-semibold text-black transition-all ease-linear hover:text-gray-700"
                 >
                   {item.name}
                 </a>
@@ -65,7 +71,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {mobileNavToggle && (
-        <div className="relative -top-1 max-w-7xl mx-auto">
+        <div className="relative -top-1 container mx-auto">
           <nav className="absolute w-full border-t border-gray-200 bg-white shadow-md lg:hidden">
             <ul className="flex flex-col p-4">
               {navItems.map((item) => (
