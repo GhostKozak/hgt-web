@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <div className="hero relative z-0 min-h-dvh pt-40">
-      <div className="max-w-7xl mx-auto flex">
+    <div className="hero relative z-0 h-min min-h-3/4 pt-56 pb-32">
+      <div className="mx-auto flex max-w-7xl">
         <div className="content">
           <h1 className="mb-6 text-6xl font-medium">
             Swift delivery,
