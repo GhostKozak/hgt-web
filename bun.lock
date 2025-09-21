@@ -4,6 +4,7 @@
     "": {
       "name": "hgttasimacilik",
       "dependencies": {
+        "hgttasimacilik": ".",
         "next": "15.5.2",
         "react": "19.1.0",
         "react-dom": "19.1.0",
@@ -178,6 +179,8 @@
     "enhanced-resolve": ["enhanced-resolve@5.18.3", "", { "dependencies": { "graceful-fs": "^4.2.4", "tapable": "^2.2.0" } }, "sha512-d4lC8xfavMeBjzGr2vECC3fsGXziXZQyJxD868h2M/mBI3PwAuODxAkLkq5HYuvrPYcUtiLzsTo8U3PgX3Ocww=="],
 
     "graceful-fs": ["graceful-fs@4.2.11", "", {}, "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ=="],
+
+    "hgttasimacilik": ["hgttasimacilik@file:", { "dependencies": { "next": "15.5.2", "react": "19.1.0", "react-dom": "19.1.0", "react-icons": "^5.5.0" }, "devDependencies": { "@biomejs/biome": "2.2.0", "@tailwindcss/postcss": "^4", "@types/node": "^20", "@types/react": "^19", "@types/react-dom": "^19", "prettier": "^3.6.2", "prettier-plugin-tailwindcss": "^0.6.14", "tailwindcss": "^4", "typescript": "^5" } }],
 
     "is-arrayish": ["is-arrayish@0.3.2", "", {}, "sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ=="],
 

@@ -16,7 +16,7 @@ export const PrimaryButton = ({
   return (
     <a
       href={href}
-      className={`group inline-flex gap-20 rounded-full px-7 py-3.5 font-medium ${size} ${bgColor} ${textColor}`}
+      className={`group inline-flex min-w-60 justify-between rounded-full px-7 py-3.5 font-medium text-nowrap ${size} ${bgColor} ${textColor}`}
     >
       {text}
       <Image
