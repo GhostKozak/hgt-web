@@ -1,9 +1,11 @@
 import Image from "next/image";
+import { PrimaryButton, StaticButton } from "./Buttons";
 import ListAnchor from "./list-anchor";
 
 export default function Hero() {
   return (
     <section className="hero relative z-0 flex min-h-[60dvh] flex-col gap-16 overflow-hidden bg-stone-50 px-5 pt-56 pb-32">
+      {/* Hero Content */}
       <div className="container mx-auto flex px-1 lg:px-0">
         <div className="content flex w-full flex-wrap-reverse items-end justify-between lg:flex-nowrap">
           <div className="flex flex-col items-start gap-6">
@@ -26,19 +28,7 @@ export default function Hero() {
                 On road
               </span>
             </div>
-            <a
-              href="../services"
-              className="inline-flex gap-20 rounded-full bg-yellow-200 px-7 py-3.5 font-medium text-black"
-            >
-              Our Service
-              <Image
-                src={"/arrow.svg"}
-                alt=""
-                width={24}
-                height={24}
-                className="inline-block"
-              />
-            </a>
+            <PrimaryButton text="Our Service" />
           </div>
           <div className="contents">
             <h1 className="mb-6 text-5xl font-medium lg:mb-0 lg:text-right lg:text-7xl xl:text-8xl">
@@ -48,6 +38,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      {/* 3 Card */}
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-center gap-2.5 rounded-2xl bg-white p-5 shadow md:p-12">
           <div className="group flex min-w-72 shrink-0 grow basis-0 cursor-pointer flex-col justify-between gap-8 rounded-lg border border-neutral-200 bg-stone-100 text-black">
@@ -64,19 +55,7 @@ export default function Hero() {
                   sizes, ensuring timely and secure deliveries.
                 </p>
               </div>
-              <button
-                type="button"
-                className="inline-flex gap-5 border-b py-1 text-base font-semibold"
-              >
-                Let's work together
-                <Image
-                  src={"/arrow.svg"}
-                  alt=""
-                  width={24}
-                  height={24}
-                  className="transition-all ease-in group-hover:rotate-45"
-                />
-              </button>
+              <StaticButton text="Let's work together" />
             </div>
             <div className="h-40 overflow-hidden rounded-b-lg">
               <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">
@@ -105,19 +84,7 @@ export default function Hero() {
                   supply chain.
                 </p>
               </div>
-              <button
-                type="button"
-                className="inline-flex gap-5 border-b py-1 text-base font-semibold"
-              >
-                Let's work together
-                <Image
-                  src={"/arrow.svg"}
-                  alt=""
-                  width={24}
-                  height={24}
-                  className="transition-all ease-in group-hover:rotate-45"
-                />
-              </button>
+              <StaticButton text="Let's work together" />
             </div>
             <div className="h-40 overflow-hidden rounded-b-lg">
               <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">
@@ -146,19 +113,7 @@ export default function Hero() {
                   logistics needs of your business.
                 </p>
               </div>
-              <button
-                type="button"
-                className="inline-flex gap-5 border-b py-1 text-base font-semibold"
-              >
-                Let's work together
-                <Image
-                  src={"/arrow.svg"}
-                  alt=""
-                  width={24}
-                  height={24}
-                  className="transition-all ease-in group-hover:rotate-45"
-                />
-              </button>
+              <StaticButton text="Let's work together" />
             </div>
             <div className="h-40 overflow-hidden rounded-b-lg">
               <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">
@@ -175,6 +130,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      {/* Video Background */}
       <div className="video-container absolute top-0 left-0 -z-10 h-[70%] w-full px-1 lg:px-0">
         <div className="absolute top-0 left-0 z-10 h-full w-full bg-black/50"></div>
         <video
