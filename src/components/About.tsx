@@ -25,6 +25,7 @@ export default function AboutUs() {
                 </span>{" "}
                 seamless and reliable logistics solutions,
                 <span className="text-neutral-500">
+                  {" "}
                   ensuring businesses stay ahead with efficient transportation
                   and supply chain management.
                 </span>
