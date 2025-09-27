@@ -1,4 +1,5 @@
 import AboutUs from "@/components/About";
+import CallInAction from "@/components/CallInAction";
 import CaseStudies from "@/components/CaseStudies";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -15,6 +16,7 @@ export default function Home() {
       <Service />
       <CaseStudies />
       <OurValues />
+      <CallInAction />
       <Footer />
     </>
   );
