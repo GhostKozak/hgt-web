@@ -14,81 +14,92 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed z-10 w-full p-5">
-      <div className="content container mx-auto flex justify-between rounded-b-md bg-white p-5">
-        {/* Logo */}
-        <div className="logo brand flex content-center justify-center">
-          <h1 className="flex content-center justify-center align-middle text-black">
-            <Image
-              src={
-                "https://framerusercontent.com/images/HXA1ecuB66Rl3hz4pQ0mjjLfNVo.svg"
-              }
-              alt=""
-              width={98}
-              height={28}
-            />
-          </h1>
-        </div>
-
-        {/* Mobile Hamburger Menu Button */}
-        <button
-          type="button"
-          className="mobile-nav-toggle cursor-pointer lg:hidden"
-          onClick={() => setMobileNavToggle(!mobileNavToggle)}
-        >
-          {/* Hamburger Icon */}
-          {!mobileNavToggle ? (
-            <div className="flex h-7 w-10 flex-col content-end items-end justify-between py-1">
-              <span className="inline-block h-0.5 w-6 bg-black"></span>
-              <span className="inline-block h-0.5 w-7 bg-black"></span>
-              <span className="inline-block h-0.5 w-6 bg-black"></span>
+    <header className="fixed z-10 w-full p-2.5">
+      <div className="px-10">
+        <div className="relative container mx-auto flex items-center justify-between rounded-b-md bg-white p-5 text-stone-900">
+          {/* Logo */}
+          <div className="logo brand flex content-center justify-center">
+            <div className="relative flex h-8 w-28 content-center justify-center overflow-hidden align-middle text-black">
+              <div className="absolute top-0 right-0 bottom-0 left-0">
+                <Image
+                  src={
+                    "https://framerusercontent.com/images/HXA1ecuB66Rl3hz4pQ0mjjLfNVo.svg"
+                  }
+                  alt=""
+                  width={98}
+                  height={28}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
             </div>
-          ) : (
-            // Close Icon
-            <div className="relative h-7 w-10 py-1">
-              <span className="absolute top-1/2 right-0 h-0.5 w-6 -translate-y-1/2 rotate-45 bg-black"></span>
-              <span className="absolute top-1/2 right-0 h-0.5 w-6 -translate-y-1/2 -rotate-45 bg-black"></span>
-            </div>
-          )}
-        </button>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden h-min lg:block">
-          <ul className="flex gap-4">
-            {navItems.map((item) => (
-              <li key={item.id}>
+          </div>
+          {/* Mobile Hamburger Menu Button */}
+          <button
+            type="button"
+            className="mobile-nav-toggle cursor-pointer lg:hidden"
+            onClick={() => setMobileNavToggle(!mobileNavToggle)}
+          >
+            {/* Hamburger Icon */}
+            {!mobileNavToggle ? (
+              <div className="flex h-7 w-10 flex-col content-end items-end justify-between py-1">
+                <span className="inline-block h-0.5 w-6 bg-black"></span>
+                <span className="inline-block h-0.5 w-7 bg-black"></span>
+                <span className="inline-block h-0.5 w-6 bg-black"></span>
+              </div>
+            ) : (
+              // Close Icon
+              <div className="relative h-7 w-10 py-1">
+                <span className="absolute top-1/2 right-0 h-0.5 w-6 -translate-y-1/2 rotate-45 bg-black"></span>
+                <span className="absolute top-1/2 right-0 h-0.5 w-6 -translate-y-1/2 -rotate-45 bg-black"></span>
+              </div>
+            )}
+          </button>
+          {/* Desktop Navigation */}
+          <nav className="hidden h-min lg:block">
+            <div className="flex gap-8">
+              {navItems.map((item) => (
                 <a
+                  key={item.id}
                   href={item.link}
-                  className="text-base font-semibold text-black transition-all ease-linear hover:text-gray-700"
+                  className="font-semibold transition-all ease-linear hover:text-gray-700"
                 >
                   {item.name}
                 </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
-
-      {/* Mobile Navigation */}
-      {mobileNavToggle && (
-        <div className="relative -top-1 container mx-auto">
-          <nav className="absolute w-full border-t border-gray-200 bg-white shadow-md lg:hidden">
-            <ul className="flex flex-col p-4">
-              {navItems.map((item) => (
-                <li key={item.id}>
-                  <a
-                    href={item.link}
-                    className="block p-2 text-lg text-black transition-all hover:pl-4 hover:text-gray-700"
-                    onClick={() => setMobileNavToggle(false)} // Menüden seçince otomatik kapanması için
-                  >
-                    {item.name}
-                  </a>
-                </li>
               ))}
-            </ul>
+            </div>
           </nav>
+          <div className="hidden items-center gap-5 lg:flex">
+            <p className="font-semibold">Interested?</p>
+            <a
+              href="#"
+              className="inline-flex rounded-full bg-yellow-200 px-7 py-4 font-semibold transition-all ease-linear hover:bg-yellow-300"
+            >
+              Let’s work together
+            </a>
+          </div>
+
+          <div className="absolute -bottom-1 left-0 container mx-auto">
+            <div
+              className={`absolute w-full overflow-hidden transition-all duration-300 lg:hidden ${mobileNavToggle ? "max-h-96" : "max-h-0"}`}
+            >
+              <nav className="w-full rounded-lg border-t border-gray-200 bg-white shadow-md lg:hidden">
+                <ul className="flex flex-col p-4">
+                  {navItems.map((item) => (
+                    <a
+                      key={item.id}
+                      href={item.link}
+                      className="block p-2 text-lg font-semibold transition-all hover:pl-4 hover:text-gray-700"
+                      onClick={() => setMobileNavToggle(false)} // Menüden seçince otomatik kapanması için
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }
