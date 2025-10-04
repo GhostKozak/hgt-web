@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import Image from "next/image";
 import { PrimaryButton, StaticButton } from "./Buttons";
 
@@ -31,34 +34,83 @@ export default function CallInAction() {
           <div className="relative flex flex-col justify-center gap-10 px-5 pr-10 pb-10 lg:px-0 lg:pb-0">
             {/* --- 1 --- */}
             <div className="flex max-w-[440px] flex-col gap-5">
-              <div className="max-w-[300px]">
+              <motion.div
+                className="max-w-[300px]"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: true }}
+              >
                 <h2 className="text-3xl font-medium text-stone-900 lg:text-5xl">
                   <span className="text-neutral-500">Partner with</span> Logis
                   <span className="text-neutral-500"> today!</span>
                 </h2>
-              </div>
-              <div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: true }}
+              >
                 <p className="text-neutral-500">
                   Looking for reliable, efficient, and scalable logistics
                   solutions? Let Logis handle your transportation and supply
                   chain needs with precision and care.
                 </p>
-              </div>
+              </motion.div>
             </div>
             {/* --- 2 --- */}
-            <div className="flex gap-10">
+            <motion.div
+              className="flex gap-10"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+              viewport={{ once: true }}
+            >
               <div>
                 <PrimaryButton text="Get a quote" />
               </div>
               <div className="inline-flex items-center">
                 <StaticButton text="Work with us" />
               </div>
-            </div>
+            </motion.div>
             {/* --- 3 --- */}
             <div className="flex flex-col gap-4">
-              <p className="font-semibold">📦 Seamless Deliveries</p>
-              <p className="font-semibold">🚛 Flexible Solutions</p>
-              <p className="font-semibold">⏳ On-Time Performance</p>
+              <motion.p
+                className="font-semibold"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                📦 Seamless Deliveries
+              </motion.p>
+              <motion.p
+                className="font-semibold"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1,
+                  ease: "easeOut",
+                  delay: 0.8,
+                }}
+                viewport={{ once: true }}
+              >
+                🚛 Flexible Solutions
+              </motion.p>
+              <motion.p
+                className="font-semibold"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1,
+                  ease: "easeOut",
+                  delay: 1.1,
+                }}
+                viewport={{ once: true }}
+              >
+                ⏳ On-Time Performance
+              </motion.p>
             </div>
           </div>
           {/*  */}

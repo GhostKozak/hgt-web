@@ -1,12 +1,21 @@
 /** biome-ignore-all lint/a11y/useValidAnchor: fixthis */
+"use client";
+
+import { motion } from "motion/react";
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-50 p-3 pt-32 pb-8 text-stone-900">
-      <div className="container mx-auto flex flex-col gap-16">
-        <div className="flex flex-col gap-52 lg:flex-row">
+    <footer className="overflow-hidden bg-slate-50 p-3 pt-32 pb-8 text-stone-900">
+      <div className="container mx-auto flex flex-col gap-16 px-5 lg:px-0">
+        <motion.div
+          className="flex flex-col gap-20 lg:flex-row lg:gap-52"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <div className="flex w-full flex-wrap justify-between gap-10 md:flex-nowrap lg:max-w-[36%] lg:flex-wrap">
             <div className="flex min-w-32 flex-col gap-4 font-semibold lg:min-w-2/5">
               <p className="font-semibold text-neutral-500">Service</p>
@@ -46,9 +55,15 @@ export default function Footer() {
               Subscribe to be in touch with latest updates.
             </h2>
           </div>
-        </div>
+        </motion.div>
         {/* Copyright */}
-        <div className="flex justify-between border-t border-solid border-neutral-200 pt-8">
+        <motion.div
+          className="flex justify-between border-t border-solid border-neutral-200 pt-8"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+          viewport={{ once: true }}
+        >
           <div>
             <p className="font-semibold text-neutral-500">
               HGT Taşımacılık.<sup>©</sup> 2025 Tüm hakları saklıdır.
@@ -68,7 +83,7 @@ export default function Footer() {
               </a>
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );
