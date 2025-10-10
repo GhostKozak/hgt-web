@@ -18,19 +18,19 @@ export default function Footer() {
         >
           <div className="flex w-full flex-wrap justify-between gap-10 md:flex-nowrap lg:max-w-[36%] lg:flex-wrap">
             <div className="flex min-w-32 flex-col gap-4 font-semibold lg:min-w-2/5">
-              <p className="font-semibold text-neutral-500">Service</p>
-              <a href="#">Freight Transportation</a>
-              <a href="#">Last-Mile Delivery</a>
-              <a href="#">Supply Chain Optimization</a>
+              <p className="font-semibold text-neutral-500">Hizmetler</p>
+              <a href="#">Yük Taşımacılığı</a>
+              <a href="#">Son Nokta Teslimatı</a>
+              <a href="#">Tedarik Zinciri Optimizasyonu</a>
             </div>
             <nav className="flex min-w-32 flex-col gap-4 font-semibold lg:min-w-[35%]">
-              <p className="font-semibold text-neutral-500">Company</p>
-              <a href="#">About</a>
-              <a href="#">Pricing</a>
-              <a href="#">Team</a>
+              <p className="font-semibold text-neutral-500">Şirket</p>
+              <a href="#">Hakkımızda</a>
+              <a href="#">Fiyatlandırma</a>
+              <a href="#">Ekibimiz</a>
             </nav>
             <div className="flex min-w-32 flex-col gap-4 font-semibold lg:min-w-2/5">
-              <p className="font-semibold text-neutral-500">Contact Us</p>
+              <p className="font-semibold text-neutral-500">İletişim</p>
               <a href="#">info@hgttasimacilik.com</a>
             </div>
             <div className="flex min-w-32 flex-col gap-4 font-semibold lg:min-w-[35%]">
@@ -52,7 +52,7 @@ export default function Footer() {
               className="mb-10"
             />
             <h2 className="text-3xl font-medium md:text-4xl lg:text-6xl">
-              Subscribe to be in touch with latest updates.
+              En son güncellemelerden haberdar olmak için abone olun.
             </h2>
           </div>
         </motion.div>
@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="font-semibold text-neutral-500">
-              Coded by
+              Kodlayan:
               <a
                 href="https://www.gokhantanriverdi.com"
                 className="text-stone-900"

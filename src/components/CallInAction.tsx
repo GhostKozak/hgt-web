@@ -42,8 +42,9 @@ export default function CallInAction() {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-medium text-stone-900 lg:text-5xl">
-                  <span className="text-neutral-500">Partner with</span> Logis
-                  <span className="text-neutral-500"> today!</span>
+                  <span className="text-neutral-500">Logis ile</span> iş ortağı
+                  olun
+                  <span className="text-neutral-500">!</span>
                 </h2>
               </motion.div>
               <motion.div
@@ -53,9 +54,9 @@ export default function CallInAction() {
                 viewport={{ once: true }}
               >
                 <p className="text-neutral-500">
-                  Looking for reliable, efficient, and scalable logistics
-                  solutions? Let Logis handle your transportation and supply
-                  chain needs with precision and care.
+                  Güvenilir, verimli ve ölçeklenebilir lojistik çözümleri mi
+                  arıyorsunuz? Taşımacılık ve tedarik zinciri ihtiyaçlarınızı
+                  Logis ile hassasiyet ve özenle yönetin.
                 </p>
               </motion.div>
             </div>
@@ -68,10 +69,10 @@ export default function CallInAction() {
               viewport={{ once: true }}
             >
               <div>
-                <PrimaryButton text="Get a quote" />
+                <PrimaryButton text="Teklif Al" />
               </div>
               <div className="inline-flex items-center">
-                <StaticButton text="Work with us" />
+                <StaticButton text="Bizimle Çalışın" />
               </div>
             </motion.div>
             {/* --- 3 --- */}
@@ -83,7 +84,7 @@ export default function CallInAction() {
                 transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                📦 Seamless Deliveries
+                📦 Sorunsuz Teslimatlar
               </motion.p>
               <motion.p
                 className="font-semibold"
@@ -96,7 +97,7 @@ export default function CallInAction() {
                 }}
                 viewport={{ once: true }}
               >
-                🚛 Flexible Solutions
+                🚛 Esnek Çözümler
               </motion.p>
               <motion.p
                 className="font-semibold"
@@ -109,7 +110,7 @@ export default function CallInAction() {
                 }}
                 viewport={{ once: true }}
               >
-                ⏳ On-Time Performance
+                ⏳ Zamanında Performans
               </motion.p>
             </div>
           </div>

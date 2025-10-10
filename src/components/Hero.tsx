@@ -19,30 +19,30 @@ export default function Hero() {
         <div className="content flex w-full flex-wrap-reverse items-end justify-between lg:flex-nowrap">
           <div className="flex flex-col items-start gap-6">
             <p className="text-2xl font-medium lg:text-3xl">
-              Efficient logistics solutions, ensuring
-              <br /> seamless transportation and supply
-              <br /> chain management.
+              Verimli lojistik çözümler,
+              <br /> sorunsuz taşımacılık ve tedarik
+              <br /> zinciri yönetimi sağlar.
             </p>
             <div className="font-semibol flex items-start gap-8">
               <span className="inline-flex items-center gap-2">
                 <ListAnchor />
-                In air
+                Havada
               </span>
               <span className="inline-flex items-center gap-2">
                 <ListAnchor />
-                At sea
+                Denizde
               </span>
               <span className="inline-flex items-center gap-2">
                 <ListAnchor />
-                On road
+                Karada
               </span>
             </div>
-            <PrimaryButton text="Our Service" />
+            <PrimaryButton text="Hizmetlerimiz" />
           </div>
           <div className="contents">
             <h1 className="mb-6 text-5xl font-medium lg:mb-0 lg:text-right lg:text-7xl xl:text-8xl">
-              Swift delivery,
-              <br /> smart logistics.
+              Hızlı teslimat,
+              <br /> akıllı lojistik.
             </h1>
           </div>
         </div>
@@ -68,15 +68,15 @@ export default function Hero() {
                 <div className="flex flex-col content-start gap-3">
                   <Image src={"/car.svg"} alt="" width={50} height={50} />
                   <h5 className="text-2xl font-medium text-stone-900">
-                    Freight Transportation
+                    Yük Taşımacılığı
                   </h5>
                 </div>
                 <p className="text-base font-normal text-neutral-500">
-                  Reliable and efficient transport solutions for goods of all
-                  sizes, ensuring timely and secure deliveries.
+                  Her boyuttaki yükler için güvenilir ve verimli taşıma
+                  çözümleri, zamanında ve güvenli teslimatlar sağlar.
                 </p>
               </div>
-              <StaticButton text="Let's work together" />
+              <StaticButton text="Birlikte çalışalım" />
             </div>
             <div className="h-40 overflow-hidden rounded-b-lg">
               <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">
@@ -103,15 +103,15 @@ export default function Hero() {
                 <div className="flex flex-col content-start gap-3.5">
                   <Image src={"/warehouse.svg"} alt="" width={50} height={50} />
                   <h5 className="text-2xl font-medium text-stone-900">
-                    Warehousing & distribution
+                    Depolama & Dağıtım
                   </h5>
                 </div>
                 <p className="text-base font-normal text-neutral-500">
-                  Streamlined storage and distribution services to optimize your
-                  supply chain.
+                  Tedarik zincirinizi optimize eden, düzenli depolama ve dağıtım
+                  hizmetleri.
                 </p>
               </div>
-              <StaticButton text="Let's work together" />
+              <StaticButton text="Birlikte çalışalım" />
             </div>
             <div className="h-40 overflow-hidden rounded-b-lg">
               <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">
@@ -138,15 +138,15 @@ export default function Hero() {
                 <div className="flex flex-col content-start gap-3.5">
                   <Image src={"/logistic.svg"} alt="" width={50} height={50} />
                   <h5 className="text-2xl font-medium text-stone-900">
-                    Custom logistics solutions
+                    Özel lojistik çözümler
                   </h5>
                 </div>
                 <p className="text-base font-normal text-neutral-500">
-                  Tailored services to meet the unique transportation and
-                  logistics needs of your business.
+                  İşletmenizin özel taşımacılık ve lojistik ihtiyaçlarına uygun
+                  hizmetler.
                 </p>
               </div>
-              <StaticButton text="Let's work together" />
+              <StaticButton text="Birlikte çalışalım" />
             </div>
             <div className="h-40 overflow-hidden rounded-b-lg">
               <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">

@@ -24,7 +24,7 @@ export default function AboutUs() {
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <ListAnchor backgroundColor="#000" /> About Us
+              <ListAnchor backgroundColor="#000" /> Hakkımızda
             </motion.div>
             <motion.div
               className="hidden lg:block"
@@ -33,7 +33,7 @@ export default function AboutUs() {
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <PrimaryButton text="About Company" />
+              <PrimaryButton text="Şirket Hakkında" />
             </motion.div>
           </div>
           <div className="flex max-w-[620px] grow flex-col content-start justify-between lg:max-w-full">
@@ -45,14 +45,12 @@ export default function AboutUs() {
                 transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <span className="text-neutral-500">
-                  We specialize in providing
-                </span>{" "}
-                seamless and reliable logistics solutions,
+                <span className="text-neutral-500">Uzmanlığımız,</span> sorunsuz
+                ve güvenilir lojistik çözümleri sunmak,
                 <span className="text-neutral-500">
                   {" "}
-                  ensuring businesses stay ahead with efficient transportation
-                  and supply chain management.
+                  işletmelerin verimli taşımacılık ve tedarik zinciri yönetimi
+                  ile önde kalmasını sağlamak.
                 </span>
               </motion.h2>
               <motion.p
@@ -62,10 +60,9 @@ export default function AboutUs() {
                 transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                With years of industry experience, we have built a reputation
-                for delivering excellence through innovative logistics
-                strategies, cutting-edge technology, and a commitment to
-                customer satisfaction.
+                Yılların sektör tecrübesiyle, yenilikçi lojistik stratejileri,
+                ileri teknoloji ve müşteri memnuniyetine bağlılığımız ile
+                mükemmellik sunma konusunda ün kazandık.
               </motion.p>
             </div>
           </div>
@@ -82,7 +79,7 @@ export default function AboutUs() {
               <span className="inline-flex h-13 w-13 items-center justify-center rounded-full bg-yellow-200">
                 1
               </span>
-              On-Time Deliveries
+              Zamanında Teslimatlar
             </motion.div>
             <motion.div
               className="inline-flex min-w-64 items-center justify-start gap-3 rounded-full bg-white pr-3 text-base font-semibold text-stone-900"
@@ -94,7 +91,7 @@ export default function AboutUs() {
               <span className="inline-flex h-13 w-13 items-center justify-center rounded-full bg-yellow-200">
                 2
               </span>
-              Cost-Effective Solutions
+              Maliyet Etkin Çözümler
             </motion.div>
             <motion.div
               className="inline-flex min-w-64 items-center justify-start gap-3 rounded-full bg-white pr-3 text-base font-semibold text-stone-900"
@@ -106,7 +103,7 @@ export default function AboutUs() {
               <span className="inline-flex h-13 w-13 items-center justify-center rounded-full bg-yellow-200">
                 3
               </span>
-              Scalable Services
+              Ölçeklenebilir Hizmetler
             </motion.div>
           </div>
 
@@ -129,7 +126,7 @@ export default function AboutUs() {
         </div>
         <div className="contents lg:hidden">
           <div className="flex justify-start">
-            <PrimaryButton text="About Company" />
+            <PrimaryButton text="Şirket Hakkında" />
           </div>
         </div>
       </div>

@@ -6,11 +6,11 @@ export default function Header() {
   const [mobileNavToggle, setMobileNavToggle] = useState(false);
 
   const navItems = [
-    { id: 1, name: "Home", link: "#home" },
-    { id: 2, name: "About", link: "#about" },
-    { id: 3, name: "Service", link: "#service" },
-    { id: 4, name: "Pricing", link: "#pricing" },
-    { id: 5, name: "Team", link: "#team" },
+    { id: 1, name: "Ana Sayfa", link: "#home" },
+    { id: 2, name: "Hakkımızda", link: "#about" },
+    { id: 3, name: "Hizmetler", link: "#service" },
+    { id: 4, name: "Fiyatlandırma", link: "#pricing" },
+    { id: 5, name: "Ekibimiz", link: "#team" },
   ];
 
   return (
@@ -69,12 +69,12 @@ export default function Header() {
             </div>
           </nav>
           <div className="hidden items-center gap-5 lg:flex">
-            <p className="font-semibold">Interested?</p>
+            <p className="font-semibold">İlgileniyor musunuz?</p>
             <a
               href="#"
               className="inline-flex rounded-full bg-yellow-200 px-7 py-4 font-semibold transition-all ease-linear hover:bg-yellow-300"
             >
-              Let’s work together
+              Birlikte çalışalım
             </a>
           </div>
 

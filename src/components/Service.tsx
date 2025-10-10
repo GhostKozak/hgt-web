@@ -17,13 +17,13 @@ export default function Service() {
             viewport={{ once: true }}
           >
             <div>
-              <h2 className="text-5xl font-medium lg:text-8xl">Services.</h2>
+              <h2 className="text-5xl font-medium lg:text-8xl">Hizmetler.</h2>
             </div>
             <div className="max-w-[550px] lg:max-w-96">
               <p className="leading-5 text-neutral-500">
-                Our solutions are tailored to meet the unique challenges of
-                modern supply chains, providing speed, reliability, and
-                flexibility at every stage of the journey.
+                Çözümlerimiz, modern tedarik zincirlerinin benzersiz
+                zorluklarını karşılamak için özel olarak tasarlanmıştır;
+                yolculuğun her aşamasında hız, güvenilirlik ve esneklik sunar.
               </p>
             </div>
           </motion.div>
@@ -45,7 +45,7 @@ export default function Service() {
               >
                 <div className="order-2 lg:order-1">
                   <h4 className="text-3xl font-medium transition-all duration-300 ease-in group-hover:text-neutral-500">
-                    Freight Transportation
+                    Yük Taşımacılığı
                   </h4>
                 </div>
                 <div className="relative order-1 contents lg:order-2">
@@ -60,7 +60,7 @@ export default function Service() {
                   </div>
                 </div>
                 <div className="order-3">
-                  <PrimaryButton text="Learn more" bgColor="bg-white" />
+                  <PrimaryButton text="Daha fazla bilgi" bgColor="bg-white" />
                 </div>
               </motion.div>
               {/* Item */}
@@ -73,7 +73,7 @@ export default function Service() {
               >
                 <div className="order-2 lg:order-1">
                   <h4 className="text-3xl font-medium transition-all duration-300 ease-in group-hover:text-neutral-500">
-                    Last-Mile Delivery
+                    Son Nokta Teslimatı
                   </h4>
                 </div>
                 <div className="relative order-1 contents lg:order-2">
@@ -88,7 +88,7 @@ export default function Service() {
                   </div>
                 </div>
                 <div className="order-3">
-                  <PrimaryButton text="Learn more" bgColor="bg-white" />
+                  <PrimaryButton text="Daha fazla bilgi" bgColor="bg-white" />
                 </div>
               </motion.div>
               {/* Item */}
@@ -101,7 +101,7 @@ export default function Service() {
               >
                 <div className="order-2 lg:order-1">
                   <h4 className="text-3xl font-medium transition-all duration-300 ease-in group-hover:text-neutral-500">
-                    Supply Chain Optimization
+                    Tedarik Zinciri Optimizasyonu
                   </h4>
                 </div>
                 <div className="relative order-1 contents lg:order-2">
@@ -116,7 +116,7 @@ export default function Service() {
                   </div>
                 </div>
                 <div className="order-3">
-                  <PrimaryButton text="Learn more" bgColor="bg-white" />
+                  <PrimaryButton text="Daha fazla bilgi" bgColor="bg-white" />
                 </div>
               </motion.div>
             </motion.div>
@@ -131,19 +131,21 @@ export default function Service() {
         >
           <div className="flex min-w-56 flex-col gap-1">
             <h2 className="text-5xl font-medium lg:text-8xl">10+</h2>
-            <p className="text-neutral-500">Years of Logistics Excellence</p>
+            <p className="text-neutral-500">Lojistikte 10+ yıl deneyim</p>
           </div>
           <div className="flex min-w-56 flex-col gap-1">
             <h2 className="text-5xl font-medium lg:text-8xl">1M+</h2>
-            <p className="text-neutral-500">Shipments Delivered Safely</p>
+            <p className="text-neutral-500">
+              1M+ sevkiyat güvenle teslim edildi
+            </p>
           </div>
           <div className="flex min-w-56 flex-col gap-1">
             <h2 className="text-5xl font-medium lg:text-8xl">100+</h2>
-            <p className="text-neutral-500">Cities Served Across Regions</p>
+            <p className="text-neutral-500">100+ şehirde hizmet</p>
           </div>
           <div className="flex min-w-56 flex-col gap-1">
             <h2 className="text-5xl font-medium lg:text-8xl">99%</h2>
-            <p className="text-neutral-500">On-Time Delivery Rate</p>
+            <p className="text-neutral-500">%99 zamanında teslimat oranı</p>
           </div>
         </motion.div>
       </div>

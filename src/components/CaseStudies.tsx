@@ -19,7 +19,7 @@ export default function CaseStudies() {
                 transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                <ListAnchor backgroundColor="#000" /> Case studies
+                <ListAnchor backgroundColor="#000" /> Başarı Hikayeleri
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
@@ -28,14 +28,9 @@ export default function CaseStudies() {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-medium text-stone-900 lg:text-5xl">
-                  <span className="text-neutral-500">
-                    We take pride in building
-                  </span>{" "}
-                  strong relationships with businesses
-                  <span className="text-neutral-500">
-                    {" "}
-                    across various industries.
-                  </span>
+                  <span className="text-neutral-500">Farklı sektörlerdeki</span>{" "}
+                  işletmelerle güçlü ilişkiler kurmaktan gurur duyuyoruz
+                  <span className="text-neutral-500">.</span>
                 </h2>
               </motion.div>
             </div>
@@ -48,10 +43,9 @@ export default function CaseStudies() {
                   viewport={{ once: true }}
                 >
                   <p className="font-semibold text-black">
-                    “Logis has transformed our logistics operations! Their
-                    on-time deliveries and professional service have helped us
-                    scale our business effortlessly. We trust them with every
-                    shipment!”
+                    “Logis lojistik operasyonlarımızı dönüştürdü! Zamanında
+                    teslimatları ve profesyonel hizmetleri sayesinde işimizi
+                    kolayca büyüttük. Her sevkiyatımızda onlara güveniyoruz!”
                   </p>
                 </motion.div>
                 <motion.hr
@@ -68,7 +62,7 @@ export default function CaseStudies() {
                   viewport={{ once: true }}
                 >
                   <p className="text-neutral-500">
-                    Michael R., Supply Chain Manager
+                    Michael R., Tedarik Zinciri Müdürü
                   </p>
                 </motion.div>
               </div>
@@ -79,7 +73,7 @@ export default function CaseStudies() {
                   transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  <PrimaryButton text="Read more" />
+                  <PrimaryButton text="Daha Fazla Oku" />
                 </motion.div>
                 <motion.div
                   className="inline-flex items-center"
@@ -88,7 +82,7 @@ export default function CaseStudies() {
                   transition={{ duration: 1, ease: "easeOut", delay: 0.9 }}
                   viewport={{ once: true }}
                 >
-                  <StaticButton text="Why choose us" />
+                  <StaticButton text="Neden Bizi Seçmelisiniz?" />
                 </motion.div>
               </div>
             </div>

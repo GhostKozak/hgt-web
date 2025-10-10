@@ -18,18 +18,15 @@ export default function OurValues() {
           >
             <div className="order-2 flex flex-col gap-5 md:order-first md:max-w-[650px] md:gap-10 lg:max-w-[750px]">
               <div className="flex items-center gap-2 font-semibold text-[#fdf36d]">
-                <ListAnchor /> Our Values
+                <ListAnchor /> Değerlerimiz
               </div>
               <div>
                 <h2 className="text-3xl font-medium text-white lg:text-5xl">
                   <span className="text-neutral-500">
-                    We are committed to delivering
+                    En yüksek hizmet standartlarını koruyarak
                   </span>{" "}
-                  reliable, efficient, and innovative logistics solutions
-                  <span className="text-neutral-500">
-                    {" "}
-                    while maintaining the highest standards of service.
-                  </span>
+                  güvenilir, verimli ve yenilikçi lojistik çözümleri sunmaya
+                  <span className="text-neutral-500"> kararlıyız.</span>
                 </h2>
               </div>
             </div>
@@ -52,16 +49,15 @@ export default function OurValues() {
                 </div>
               </div>
               <div className="flex max-w-80 flex-col gap-3.5">
-                {" "}
                 <div>
                   <h4 className="text-3xl font-medium text-yellow-200">
-                    Reliability
+                    Güvenilirlik
                   </h4>
                 </div>
                 <div>
                   <p className="text-neutral-400">
-                    We ensure on-time deliveries and seamless logistics
-                    operations, giving our clients peace of mind.
+                    Zamanında teslimatları ve sorunsuz lojistik operasyonları
+                    garanti ediyor, müşterilerimize güven sağlıyoruz.
                   </p>
                 </div>
               </div>
@@ -74,16 +70,16 @@ export default function OurValues() {
                 </div>
               </div>
               <div className="flex max-w-80 flex-col gap-3.5">
-                {" "}
                 <div>
                   <h4 className="text-3xl font-medium text-yellow-200">
-                    Efficiency
+                    Verimlilik
                   </h4>
                 </div>
                 <div>
                   <p className="text-neutral-400">
-                    We optimize routes, reduce costs, and enhance supply chain
-                    performance to maximize productivity.
+                    Rotaları optimize ediyor, maliyetleri azaltıyor ve tedarik
+                    zinciri performansını artırarak verimliliği en üst düzeye
+                    çıkarıyoruz.
                   </p>
                 </div>
               </div>
@@ -96,16 +92,15 @@ export default function OurValues() {
                 </div>
               </div>
               <div className="flex max-w-80 flex-col gap-3.5">
-                {" "}
                 <div>
                   <h4 className="text-3xl font-medium text-yellow-200">
-                    Innovation
+                    Yenilikçilik
                   </h4>
                 </div>
                 <div>
                   <p className="text-neutral-400">
-                    We embrace the latest logistics technologies to improve
-                    tracking, security, and overall service quality.
+                    Takip, güvenlik ve genel hizmet kalitesini artırmak için en
+                    yeni lojistik teknolojilerini benimsiyoruz.
                   </p>
                 </div>
               </div>
