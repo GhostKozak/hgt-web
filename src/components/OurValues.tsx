@@ -6,7 +6,7 @@ import ListAnchor from "./list-anchor";
 
 export default function OurValues() {
   return (
-    <section className="bg-stone-50 p-5 pb-32 text-stone-900">
+    <section className="bg-stone-50 p-5 pb-16 text-stone-900 lg:pb-32">
       <div className="container mx-auto flex">
         <div className="flex w-full flex-col gap-12 rounded-xl bg-stone-900 px-5 py-10 md:gap-20 md:px-10 md:py-16 lg:p-16">
           <motion.div

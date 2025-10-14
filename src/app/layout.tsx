@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body
-        className={`${urbanist.className} flex h-full flex-col antialiased`}
+        className={`${urbanist.className} flex h-full w-full flex-col antialiased`}
       >
-        {children}
+        <main className="overflow-x-hidden">{children}</main>
       </body>
     </html>
   );

@@ -7,9 +7,9 @@ import ListAnchor from "./list-anchor";
 
 export default function CaseStudies() {
   return (
-    <section className="bg-stone-50 p-5 pb-32 text-stone-900">
+    <section className="bg-stone-50 p-5 pb-16 text-stone-900 lg:pb-32">
       <div className="container mx-auto flex">
-        <div className="flex flex-col gap-16 lg:flex-row lg:gap-28">
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-28">
           <div className="order-1 flex w-full flex-col gap-8 lg:order-first lg:gap-48">
             <div className="flex flex-col gap-5">
               <motion.div
@@ -66,7 +66,7 @@ export default function CaseStudies() {
                   </p>
                 </motion.div>
               </div>
-              <div className="flex gap-10">
+              <div className="flex flex-col gap-5 lg:flex-row lg:gap-10">
                 <motion.div
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ export default function CaseStudies() {
                   <PrimaryButton text="Daha Fazla Oku" />
                 </motion.div>
                 <motion.div
-                  className="inline-flex items-center"
+                  className="inline-flex items-center pl-4 lg:pl-0"
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeOut", delay: 0.9 }}
@@ -87,7 +87,7 @@ export default function CaseStudies() {
               </div>
             </div>
           </div>
-          <div className="relative h-96 w-full overflow-hidden rounded-xl lg:h-full">
+          <div className="relative h-72 w-full overflow-hidden rounded-xl md:h-96 lg:h-full">
             <motion.div
               className="absolute top-0 left-0"
               initial={{ opacity: 0, y: 70 }}
@@ -100,7 +100,7 @@ export default function CaseStudies() {
                 alt=""
                 width={990}
                 height={1020}
-                className="h-full w-full object-cover object-[49%_25.9%]"
+                className="block h-full w-full object-cover object-[49%_25.9%]"
               />
             </motion.div>
           </div>

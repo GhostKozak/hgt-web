@@ -7,7 +7,7 @@ import ListAnchor from "./list-anchor";
 
 export default function AboutUs() {
   return (
-    <section className="bg-stone-50 p-5 pb-20 lg:pb-32">
+    <section className="bg-stone-50 p-5 pb-16 lg:pb-32">
       <div className="container mx-auto flex flex-col gap-10">
         <motion.div
           className="flex flex-col gap-6 lg:flex-row lg:gap-20"

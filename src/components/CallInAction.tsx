@@ -62,7 +62,7 @@ export default function CallInAction() {
             </div>
             {/* --- 2 --- */}
             <motion.div
-              className="flex gap-10"
+              className="flex flex-col gap-4 lg:flex-row lg:gap-10"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
@@ -71,7 +71,7 @@ export default function CallInAction() {
               <div>
                 <PrimaryButton text="Teklif Al" />
               </div>
-              <div className="inline-flex items-center">
+              <div className="inline-flex items-center pl-7 lg:pl-0">
                 <StaticButton text="Bizimle Çalışın" />
               </div>
             </motion.div>

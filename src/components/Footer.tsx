@@ -7,7 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="overflow-hidden bg-slate-50 p-3 pt-32 pb-8 text-stone-900">
+    <footer className="overflow-hidden bg-slate-50 p-3 pt-16 pb-8 text-stone-900 lg:pt-32">
       <div className="container mx-auto flex flex-col gap-16 px-5 lg:px-0">
         <motion.div
           className="flex flex-col gap-20 lg:flex-row lg:gap-52"
@@ -58,19 +58,19 @@ export default function Footer() {
         </motion.div>
         {/* Copyright */}
         <motion.div
-          className="flex justify-between border-t border-solid border-neutral-200 pt-8"
+          className="flex flex-col justify-between gap-5 border-t border-solid border-neutral-200 pt-8"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
           viewport={{ once: true }}
         >
           <div>
-            <p className="font-semibold text-neutral-500">
+            <p className="text-center font-semibold text-neutral-500 lg:text-left">
               HGT Taşımacılık.<sup>©</sup> 2025 Tüm hakları saklıdır.
             </p>
           </div>
           <div>
-            <p className="font-semibold text-neutral-500">
+            <p className="text-center font-semibold text-neutral-500 lg:text-left">
               Kodlayan:
               <a
                 href="https://www.gokhantanriverdi.com"

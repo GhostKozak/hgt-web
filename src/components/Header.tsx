@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className="fixed z-10 w-full p-2.5">
-      <div className="px-10">
+      <div className="lg:px-10">
         <div className="relative container mx-auto flex items-center justify-between rounded-b-md bg-white p-5 text-stone-900">
           {/* Logo */}
           <div className="logo brand flex content-center justify-center">
