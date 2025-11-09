@@ -42,7 +42,7 @@ export default function CallInAction() {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-medium text-stone-900 lg:text-5xl">
-                  <span className="text-neutral-500">Logis ile</span> iş ortağı
+                  <span className="text-neutral-500">HGT ile</span> iş ortağı
                   olun
                   <span className="text-neutral-500">!</span>
                 </h2>
@@ -56,7 +56,7 @@ export default function CallInAction() {
                 <p className="text-neutral-500">
                   Güvenilir, verimli ve ölçeklenebilir lojistik çözümleri mi
                   arıyorsunuz? Taşımacılık ve tedarik zinciri ihtiyaçlarınızı
-                  Logis ile hassasiyet ve özenle yönetin.
+                  HGT ile hassasiyet ve özenle yönetin.
                 </p>
               </motion.div>
             </div>

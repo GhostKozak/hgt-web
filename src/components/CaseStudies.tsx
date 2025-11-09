@@ -43,7 +43,7 @@ export default function CaseStudies() {
                   viewport={{ once: true }}
                 >
                   <p className="font-semibold text-black">
-                    “Logis lojistik operasyonlarımızı dönüştürdü! Zamanında
+                    HGT lojistik operasyonlarımızı dönüştürdü! Zamanında
                     teslimatları ve profesyonel hizmetleri sayesinde işimizi
                     kolayca büyüttük. Her sevkiyatımızda onlara güveniyoruz!”
                   </p>

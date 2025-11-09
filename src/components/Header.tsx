@@ -19,12 +19,10 @@ export default function Header() {
         <div className="relative container mx-auto flex items-center justify-between rounded-b-md bg-white p-5 text-stone-900">
           {/* Logo */}
           <div className="logo brand flex content-center justify-center">
-            <div className="relative flex h-8 w-28 content-center justify-center overflow-hidden align-middle text-black">
+            <div className="relative flex h-16 w-18 content-center justify-center overflow-hidden align-middle text-black">
               <div className="absolute top-0 right-0 bottom-0 left-0">
                 <Image
-                  src={
-                    "https://framerusercontent.com/images/HXA1ecuB66Rl3hz4pQ0mjjLfNVo.svg"
-                  }
+                  src={"./logo.svg"}
                   alt=""
                   width={98}
                   height={28}

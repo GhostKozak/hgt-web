@@ -43,9 +43,7 @@ export default function Footer() {
           </div>
           <div>
             <Image
-              src={
-                "https://framerusercontent.com/images/HXA1ecuB66Rl3hz4pQ0mjjLfNVo.svg"
-              }
+              src={"./logo.svg"}
               alt=""
               width={210}
               height={60}

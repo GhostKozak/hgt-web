@@ -19,9 +19,9 @@ export default function Hero() {
         <div className="content flex w-full flex-wrap-reverse items-end justify-between lg:flex-nowrap">
           <div className="flex flex-col items-start gap-6">
             <p className="text-2xl font-medium lg:text-3xl">
-              Verimli lojistik çözümler,
-              <br /> sorunsuz taşımacılık ve tedarik
-              <br /> zinciri yönetimi sağlar.
+              Teminat, Aktarma ve Transit işlemleriniz
+              <br /> sorunsuz ve eksiksiz bir şekilde gümrük hizmeti
+              <br /> verilerek teslimat sağlamaktayız
             </p>
             <div className="font-semibol flex items-start gap-8">
               <span className="inline-flex items-center gap-2">
@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="contents">
             <h1 className="mb-6 text-5xl font-medium lg:mb-0 lg:text-right lg:text-7xl xl:text-8xl">
               Hızlı teslimat,
-              <br /> akıllı lojistik.
+              <br /> özel lojistik.
             </h1>
           </div>
         </div>
@@ -72,8 +72,9 @@ export default function Hero() {
                   </h5>
                 </div>
                 <p className="text-base font-normal text-neutral-500">
-                  Her boyuttaki yükler için güvenilir ve verimli taşıma
-                  çözümleri, zamanında ve güvenli teslimatlar sağlar.
+                  Eşyalarınızı en yüksek güvenlik standartlarına uygun olarak
+                  taşıyor, her aşamada titizlikle kontrol ederek hasarsız
+                  teslimat sağlıyoruz.
                 </p>
               </div>
               <StaticButton text="Birlikte çalışalım" />
@@ -107,8 +108,9 @@ export default function Hero() {
                   </h5>
                 </div>
                 <p className="text-base font-normal text-neutral-500">
-                  Tedarik zincirinizi optimize eden, düzenli depolama ve dağıtım
-                  hizmetleri.
+                  Operasyonlarımızı optimize ederek, en kısa sürede ve en etkin
+                  şekilde teslimat yaparak, müşterilerimize zamanında
+                  hizmet sunuyoruz.
                 </p>
               </div>
               <StaticButton text="Birlikte çalışalım" />
@@ -126,7 +128,7 @@ export default function Hero() {
               </div>
             </div>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             className="group flex min-w-72 shrink-0 grow basis-0 cursor-pointer flex-col justify-between gap-8 rounded-lg border border-neutral-200 bg-stone-100 text-black"
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -160,7 +162,7 @@ export default function Hero() {
                 />
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </motion.div>
       {/* Video Background */}
