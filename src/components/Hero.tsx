@@ -7,7 +7,7 @@ import ListAnchor from "./list-anchor";
 
 export default function Hero() {
   return (
-    <section className="hero relative z-0 flex min-h-[60dvh] flex-col gap-16 overflow-hidden bg-stone-50 px-5 pt-44 pb-16 lg:pt-56 lg:pb-32">
+    <section className="hero relative z-0 flex min-h-[60dvh] flex-col gap-16 overflow-hidden bg-stone-50 px-5 pt-44 pb-16 lg:pt-56">
       {/* Hero Content */}
       <motion.div
         className="container mx-auto flex px-1 lg:px-0"

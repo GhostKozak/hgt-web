@@ -6,7 +6,7 @@ import { PrimaryButton, StaticButton } from "./Buttons";
 
 export default function CallInAction() {
   return (
-    <section className="bg-stone-50 px-5 text-stone-900">
+    <section className="bg-stone-50 px-5 pt-16 text-stone-900 lg:pt-32">
       <div className="container mx-auto">
         <div className="flex flex-col gap-10 bg-white lg:flex-row lg:gap-24">
           {/*  */}

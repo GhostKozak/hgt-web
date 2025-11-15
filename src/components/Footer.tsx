@@ -3,6 +3,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
@@ -25,9 +26,9 @@ export default function Footer() {
             </div>
             <nav className="flex min-w-32 flex-col gap-4 font-semibold lg:min-w-[35%]">
               <p className="font-semibold text-neutral-500">Şirket</p>
-              <a href="#">Hakkımızda</a>
-              <a href="#">Fiyatlandırma</a>
-              <a href="#">Ekibimiz</a>
+              <Link href="#about">Hakkımızda</Link>
+              <Link href="#services">Hizmetler</Link>
+              <Link href="#studies">Başarılarımız</Link>
             </nav>
             <div className="flex min-w-32 flex-col gap-4 font-semibold lg:min-w-2/5">
               <p className="font-semibold text-neutral-500">İletişim</p>
@@ -56,7 +57,7 @@ export default function Footer() {
         </motion.div>
         {/* Copyright */}
         <motion.div
-          className="flex flex-col justify-between gap-5 border-t border-solid border-neutral-200 pt-8"
+          className="flex flex-col justify-between gap-5 border-t border-solid border-neutral-200 pt-8 lg:flex-row"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
@@ -64,7 +65,8 @@ export default function Footer() {
         >
           <div>
             <p className="text-center font-semibold text-neutral-500 lg:text-left">
-              HGT Taşımacılık.<sup>©</sup> 2025 Tüm hakları saklıdır.
+              HGT Taşımacılık.<sup>©</sup> {new Date().getUTCFullYear()} Tüm
+              hakları saklıdır.
             </p>
           </div>
           <div>

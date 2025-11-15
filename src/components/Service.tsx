@@ -6,7 +6,10 @@ import { PrimaryButton } from "./Buttons";
 
 export default function Service() {
   return (
-    <section className="bg-stone-50 p-5 pb-16 text-stone-900 lg:pb-32">
+    <section
+      id="service"
+      className="bg-stone-50 p-5 pt-16 text-stone-900 lg:pt-32"
+    >
       <div className="container mx-auto flex flex-col gap-12">
         <div>
           <motion.div

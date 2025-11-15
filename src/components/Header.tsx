@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Header() {
@@ -9,16 +10,19 @@ export default function Header() {
     { id: 1, name: "Ana Sayfa", link: "#home" },
     { id: 2, name: "Hakkımızda", link: "#about" },
     { id: 3, name: "Hizmetler", link: "#service" },
-    { id: 4, name: "Fiyatlandırma", link: "#pricing" },
-    { id: 5, name: "Ekibimiz", link: "#team" },
+    { id: 4, name: "Başarılarımız", link: "#studies" },
+    { id: 5, name: "Değerlerimiz", link: "#ourvalues" },
   ];
 
   return (
     <header className="fixed z-10 w-full p-2.5">
       <div className="lg:px-10">
-        <div className="relative container mx-auto flex items-center justify-between rounded-b-md bg-white p-5 text-stone-900">
+        <div className="relative container mx-auto flex items-center justify-between rounded-b-md bg-white p-5 text-stone-900 shadow-md">
           {/* Logo */}
-          <div className="logo brand flex content-center justify-center">
+          <Link
+            href={"#home"}
+            className="logo brand flex content-center justify-center"
+          >
             <div className="relative flex h-16 w-18 content-center justify-center overflow-hidden align-middle text-black">
               <div className="absolute top-0 right-0 bottom-0 left-0">
                 <Image
@@ -30,7 +34,7 @@ export default function Header() {
                 />
               </div>
             </div>
-          </div>
+          </Link>
           {/* Mobile Hamburger Menu Button */}
           <button
             type="button"
@@ -56,17 +60,17 @@ export default function Header() {
           <nav className="hidden h-min lg:block">
             <div className="flex gap-8">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.id}
                   href={item.link}
                   className="font-semibold transition-all ease-linear hover:text-gray-700"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </nav>
-          <div className="hidden items-center gap-5 lg:flex">
+          {/* <div className="hidden items-center gap-5 lg:flex">
             <p className="font-semibold">İlgileniyor musunuz?</p>
             <a
               href="#"
@@ -74,7 +78,7 @@ export default function Header() {
             >
               Birlikte çalışalım
             </a>
-          </div>
+          </div> */}
 
           <div className="absolute -bottom-1 left-0 container mx-auto">
             <div
@@ -83,14 +87,14 @@ export default function Header() {
               <nav className="w-full rounded-lg border-t border-gray-200 bg-white shadow-md lg:hidden">
                 <ul className="flex flex-col p-4">
                   {navItems.map((item) => (
-                    <a
+                    <Link
                       key={item.id}
                       href={item.link}
                       className="block p-2 text-lg font-semibold transition-all hover:pl-4 hover:text-gray-700"
                       onClick={() => setMobileNavToggle(false)} // Menüden seçince otomatik kapanması için
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </ul>
               </nav>

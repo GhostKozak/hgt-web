@@ -7,7 +7,10 @@ import ListAnchor from "./list-anchor";
 
 export default function CaseStudies() {
   return (
-    <section className="bg-stone-50 p-5 pb-16 text-stone-900 lg:pb-32">
+    <section
+      id="studies"
+      className="bg-stone-50 p-5 pt-16 text-stone-900 lg:pt-32"
+    >
       <div className="container mx-auto flex">
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-28">
           <div className="order-1 flex w-full flex-col gap-8 lg:order-first lg:gap-48">
