@@ -32,7 +32,10 @@ export default function Footer() {
             </nav>
             <div className="flex min-w-32 flex-col gap-4 font-semibold lg:min-w-2/5">
               <p className="font-semibold text-neutral-500">İletişim</p>
-              <a href="#">info@hgttasimacilik.com</a>
+              <a href="mailto:info@hgttasimacilik.com">
+                info@hgttasimacilik.com
+              </a>
+              <a href="tel:905331452436">+90 533 145 24 36</a>
             </div>
             <div className="flex min-w-32 flex-col gap-4 font-semibold lg:min-w-[35%]">
               <p>&nbsp;</p>
@@ -50,9 +53,9 @@ export default function Footer() {
               height={60}
               className="mb-10"
             />
-            <h2 className="text-3xl font-medium md:text-4xl lg:text-6xl">
+            {/* <h2 className="text-3xl font-medium md:text-4xl lg:text-6xl">
               En son güncellemelerden haberdar olmak için abone olun.
-            </h2>
+            </h2> */}
           </div>
         </motion.div>
         {/* Copyright */}

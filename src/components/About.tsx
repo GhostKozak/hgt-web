@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import { PrimaryButton } from "./Buttons";
 import ListAnchor from "./list-anchor";
 
 export default function AboutUs() {
@@ -16,7 +15,7 @@ export default function AboutUs() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <div className="flex grow flex-col content-start justify-between">
+          <div className="flex min-w-[220px] grow flex-col content-start justify-between">
             <motion.div
               className="flex items-center gap-2 font-semibold text-stone-900"
               initial={{ opacity: 0, y: 40 }}
@@ -33,7 +32,7 @@ export default function AboutUs() {
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <PrimaryButton text="Şirket Hakkında" />
+              {/* <PrimaryButton text="Şirket Hakkında" /> */}
             </motion.div>
           </div>
           <div className="flex max-w-[620px] grow flex-col content-start justify-between lg:max-w-full">
@@ -126,7 +125,7 @@ export default function AboutUs() {
         </div>
         <div className="contents lg:hidden">
           <div className="flex justify-start">
-            <PrimaryButton text="Şirket Hakkında" />
+            {/* <PrimaryButton text="Şirket Hakkında" /> */}
           </div>
         </div>
       </div>

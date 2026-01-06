@@ -61,7 +61,7 @@ export default function CallInAction() {
               </motion.div>
             </div>
             {/* --- 2 --- */}
-            <motion.div
+            {/* <motion.div
               className="flex flex-col gap-4 lg:flex-row lg:gap-10"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ export default function CallInAction() {
               <div className="inline-flex items-center pl-7 lg:pl-0">
                 <StaticButton text="Bizimle Çalışın" />
               </div>
-            </motion.div>
+            </motion.div> */}
             {/* --- 3 --- */}
             <div className="flex flex-col gap-4">
               <motion.p

@@ -9,7 +9,7 @@ import Service from "@/components/Service";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Header />
       <Hero />
       <AboutUs />
@@ -18,6 +18,6 @@ export default function Home() {
       <OurValues />
       <CallInAction />
       <Footer />
-    </>
+    </main>
   );
 }

@@ -69,7 +69,7 @@ export default function CaseStudies() {
                   </p>
                 </motion.div>
               </div>
-              <div className="flex flex-col gap-5 lg:flex-row lg:gap-10">
+              {/* <div className="flex flex-col gap-5 lg:flex-row lg:gap-10">
                 <motion.div
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ export default function CaseStudies() {
                 >
                   <StaticButton text="Neden Bizi Seçmelisiniz?" />
                 </motion.div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="relative h-72 w-full overflow-hidden rounded-xl md:h-96 lg:h-full">

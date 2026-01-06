@@ -62,9 +62,9 @@ export default function Service() {
                     />
                   </div>
                 </div>
-                <div className="order-3">
+                {/* <div className="order-3">
                   <PrimaryButton text="Daha fazla bilgi" bgColor="bg-white" />
-                </div>
+                </div> */}
               </motion.div>
               {/* Item */}
               <motion.div
@@ -76,7 +76,7 @@ export default function Service() {
               >
                 <div className="order-2 lg:order-1">
                   <h4 className="text-3xl font-medium transition-all duration-300 ease-in group-hover:text-neutral-500">
-                    Son Nokta Teslimatı
+                    Depolama
                   </h4>
                 </div>
                 <div className="relative order-1 contents lg:order-2">
@@ -90,9 +90,9 @@ export default function Service() {
                     />
                   </div>
                 </div>
-                <div className="order-3">
+                {/* <div className="order-3">
                   <PrimaryButton text="Daha fazla bilgi" bgColor="bg-white" />
-                </div>
+                </div> */}
               </motion.div>
               {/* Item */}
               <motion.div
@@ -104,7 +104,7 @@ export default function Service() {
               >
                 <div className="order-2 lg:order-1">
                   <h4 className="text-3xl font-medium transition-all duration-300 ease-in group-hover:text-neutral-500">
-                    Tedarik Zinciri Optimizasyonu
+                    Transit, LR, Teminatlı Teslimat
                   </h4>
                 </div>
                 <div className="relative order-1 contents lg:order-2">
@@ -118,9 +118,9 @@ export default function Service() {
                     />
                   </div>
                 </div>
-                <div className="order-3">
+                {/* <div className="order-3">
                   <PrimaryButton text="Daha fazla bilgi" bgColor="bg-white" />
-                </div>
+                </div> */}
               </motion.div>
             </motion.div>
           </div>

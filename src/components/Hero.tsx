@@ -37,12 +37,12 @@ export default function Hero() {
                 Karada
               </span>
             </div>
-            <PrimaryButton text="Hizmetlerimiz" />
+            {/* <PrimaryButton text="Hizmetlerimiz" /> */}
           </div>
           <div className="contents">
             <h1 className="mb-6 text-5xl font-medium lg:mb-0 lg:text-right lg:text-7xl xl:text-8xl">
-              Hızlı teslimat,
-              <br /> özel lojistik.
+              Hızlı ve Güvenli,
+              <br /> Teslimat
             </h1>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function Hero() {
                   teslimat sağlıyoruz.
                 </p>
               </div>
-              <StaticButton text="Birlikte çalışalım" />
+              {/* <StaticButton text="Birlikte çalışalım" /> */}
             </div>
             <div className="h-40 overflow-hidden rounded-b-lg">
               <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">
@@ -113,7 +113,7 @@ export default function Hero() {
                   hizmet sunuyoruz.
                 </p>
               </div>
-              <StaticButton text="Birlikte çalışalım" />
+              {/* <StaticButton text="Birlikte çalışalım" /> */}
             </div>
             <div className="h-40 overflow-hidden rounded-b-lg">
               <div className="h-full w-full transition-all duration-500 ease-in group-hover:scale-110">
