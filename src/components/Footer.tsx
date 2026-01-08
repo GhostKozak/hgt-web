@@ -17,7 +17,7 @@ export default function Footer() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <div className="flex w-full flex-wrap justify-between gap-10 md:flex-nowrap lg:max-w-[36%] lg:flex-wrap">
+          <div className="order-2 flex w-full flex-wrap justify-between gap-10 md:flex-nowrap lg:max-w-[36%] lg:flex-wrap">
             <div className="flex min-w-32 flex-col gap-4 font-semibold lg:min-w-2/5">
               <p className="font-semibold text-neutral-500">Hizmetler</p>
               <a href="#">Yük Taşımacılığı</a>
@@ -45,13 +45,13 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div>
+          <div className="order-1 flex w-full lg:order-2">
             <Image
               src={"./logo.svg"}
               alt=""
               width={210}
               height={60}
-              className="mb-10"
+              className="mb-full mx-auto inline lg:ml-auto"
             />
             {/* <h2 className="text-3xl font-medium md:text-4xl lg:text-6xl">
               En son güncellemelerden haberdar olmak için abone olun.

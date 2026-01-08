@@ -90,20 +90,20 @@ export default function CaseStudies() {
               </div> */}
             </div>
           </div>
-          <div className="relative h-72 w-full overflow-hidden rounded-xl md:h-96 lg:h-full">
+          <div className="relative h-full w-full overflow-hidden rounded-xl md:h-full lg:h-full">
             <motion.div
-              className="absolute top-0 left-0"
+              className="absolute top-0 left-0 h-full"
               initial={{ opacity: 0, y: 70 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
               viewport={{ once: true }}
             >
               <Image
-                src={"/person.jpg"}
+                src={"/our.png"}
                 alt=""
                 width={990}
                 height={1020}
-                className="block h-full w-full object-cover object-[49%_25.9%]"
+                className="block h-full w-full object-cover object-center"
               />
             </motion.div>
           </div>
