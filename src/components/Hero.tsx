@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import { PrimaryButton, StaticButton } from "./Buttons";
 import ListAnchor from "./list-anchor";
 
 export default function Hero() {
@@ -66,7 +65,13 @@ export default function Hero() {
             <div className="flex min-h-60 flex-col items-start justify-between gap-3 p-8 pb-0">
               <div className="flex flex-col content-start gap-3.5">
                 <div className="flex flex-col content-start gap-3">
-                  <Image src={"/car.svg"} alt="" width={50} height={50} />
+                  <Image
+                    src={"/car.svg"}
+                    alt="car icon"
+                    width={50}
+                    height={50}
+                    loading="eager"
+                  />
                   <h5 className="text-2xl font-medium text-stone-900">
                     Yük Taşımacılığı
                   </h5>
@@ -86,6 +91,7 @@ export default function Hero() {
                   alt="Thumbnail"
                   width={1920}
                   height={1080}
+                  loading="eager"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="h-full w-full object-cover object-[43%_30.7%]"
                 />
@@ -102,7 +108,13 @@ export default function Hero() {
             <div className="flex min-h-60 flex-col items-start justify-between gap-3 p-8 pb-0">
               <div className="flex flex-col content-start gap-3">
                 <div className="flex flex-col content-start gap-3.5">
-                  <Image src={"/warehouse.svg"} alt="" width={50} height={50} />
+                  <Image
+                    src={"/warehouse.svg"}
+                    alt="warehouse icon"
+                    width={50}
+                    height={50}
+                    loading="eager"
+                  />
                   <h5 className="text-2xl font-medium text-stone-900">
                     Depolama & Dağıtım
                   </h5>
@@ -122,6 +134,7 @@ export default function Hero() {
                   alt="Thumbnail"
                   width={1920}
                   height={1080}
+                  loading="eager"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="h-full w-full object-cover object-center"
                 />
@@ -173,10 +186,10 @@ export default function Hero() {
           autoPlay
           loop
           muted
-          preload="auto"
+          preload="true"
           playsInline
           className="h-full w-full object-cover object-center"
-          poster="https://framerusercontent.com/images/KSM5xSWcEga3lSTWK61Uk8WBys.jpg"
+          poster="/hero-poster.jpg"
         ></video>
       </div>
     </section>

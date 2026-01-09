@@ -27,9 +27,10 @@ export default function Header() {
               <div className="absolute top-0 right-0 bottom-0 left-0">
                 <Image
                   src={"./logo.svg"}
-                  alt=""
+                  alt="HGT firmasının logosu"
                   width={98}
                   height={28}
+                  loading="eager"
                   className="h-full w-full object-cover object-center"
                 />
               </div>

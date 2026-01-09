@@ -34,7 +34,12 @@ export default function OurValues() {
               </div>
             </div>
             <div className="order-1 w-full md:order-last md:max-w-52 lg:max-w-64">
-              <Image src={"/ourvalues.svg"} alt="" width={260} height={164} />
+              <Image
+                src={"/ourvalues.svg"}
+                alt="two arrow icon"
+                width={260}
+                height={164}
+              />
             </div>
           </motion.div>
           <motion.div
@@ -48,7 +53,7 @@ export default function OurValues() {
             <div className="flex flex-col gap-10 lg:w-full">
               <div className="border-b border-solid border-neutral-700 pb-8">
                 <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#fdf36d]">
-                  <Image src={"/our-1.svg"} alt="" width={24} height={24} />
+                  <Image src={"/our-1.svg"} alt="icon" width={24} height={24} />
                 </div>
               </div>
               <div className="flex max-w-80 flex-col gap-3.5">
@@ -69,7 +74,7 @@ export default function OurValues() {
             <div className="flex flex-col gap-10 lg:w-full">
               <div className="border-b border-solid border-neutral-700 pb-8">
                 <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#fdf36d]">
-                  <Image src={"/our-2.svg"} alt="" width={24} height={24} />
+                  <Image src={"/our-2.svg"} alt="icon" width={24} height={24} />
                 </div>
               </div>
               <div className="flex max-w-80 flex-col gap-3.5">
@@ -91,7 +96,7 @@ export default function OurValues() {
             <div className="flex flex-col gap-10 lg:w-full">
               <div className="border-b border-solid border-neutral-700 pb-8">
                 <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#fdf36d]">
-                  <Image src={"/our-3.svg"} alt="" width={24} height={24} />
+                  <Image src={"/our-3.svg"} alt="icon" width={24} height={24} />
                 </div>
               </div>
               <div className="flex max-w-80 flex-col gap-3.5">

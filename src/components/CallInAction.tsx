@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import { PrimaryButton, StaticButton } from "./Buttons";
 
 export default function CallInAction() {
   return (
@@ -14,7 +13,7 @@ export default function CallInAction() {
             <div className="absolute inset-0">
               <Image
                 src={"/cia.jpg"}
-                alt=""
+                alt="Yolda giden bir kamyon"
                 width={1920}
                 height={1273}
                 className="h-full w-full object-cover object-center"
@@ -23,7 +22,7 @@ export default function CallInAction() {
             <div className="absolute -inset-1">
               <Image
                 src={"/cia-overlay.svg"}
-                alt=""
+                alt="Transparan logo"
                 width={1920}
                 height={1273}
                 className="h-full w-full object-cover object-center"

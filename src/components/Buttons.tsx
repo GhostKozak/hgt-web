@@ -16,12 +16,12 @@ export const PrimaryButton = ({
   return (
     <a
       href={href}
-      className={`group inline-flex min-w-60 justify-between rounded-full px-7 py-3.5 font-medium text-nowrap ${size} ${bgColor} ${textColor} hidden`}
+      className={`group inline-flex min-w-60 justify-between rounded-full px-7 py-3.5 font-medium text-nowrap ${size} ${bgColor} ${textColor}`}
     >
       {text}
       <Image
         src={"/arrow.svg"}
-        alt=""
+        alt="arrow"
         width={24}
         height={24}
         className="inline-block transition-all duration-500 group-hover:rotate-45"
@@ -39,7 +39,7 @@ export const StaticButton = ({ text = "Example Button" }: { text: string }) => {
       {text}
       <Image
         src={"/arrow.svg"}
-        alt=""
+        alt="arrow"
         width={24}
         height={24}
         className="hidden transition-all ease-in group-hover:rotate-45"

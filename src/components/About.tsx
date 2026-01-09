@@ -115,7 +115,7 @@ export default function AboutUs() {
           >
             <Image
               src={"/about.jpg"}
-              alt=""
+              alt="HGT Taşımacılık lojistik depo ekibi ve tır filosu"
               width={1920}
               height={997}
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

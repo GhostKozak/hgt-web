@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import { PrimaryButton, StaticButton } from "./Buttons";
 import ListAnchor from "./list-anchor";
 
 export default function CaseStudies() {
@@ -100,7 +99,7 @@ export default function CaseStudies() {
             >
               <Image
                 src={"/our.png"}
-                alt=""
+                alt="HGT Taşımacılık lojistik depo ekibi"
                 width={990}
                 height={1020}
                 className="block h-full w-full object-cover object-center"

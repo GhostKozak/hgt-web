@@ -18,6 +18,27 @@ export default function Home() {
       <OurValues />
       <CallInAction />
       <Footer />
+      <Head />
     </main>
+  );
+}
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "LogisticsService",
+  name: "HGT Taşımacılık",
+  image: "https://hgttasimacilik.com/logo.svg",
+  telephone: "+90 533 145 24 36",
+  email: "info@hgttasimacilik.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Istanbul",
+    addressCountry: "TR",
+  },
+};
+
+export function Head() {
+  return (
+    <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
   );
 }

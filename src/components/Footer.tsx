@@ -48,7 +48,7 @@ export default function Footer() {
           <div className="order-1 flex w-full lg:order-2">
             <Image
               src={"./logo.svg"}
-              alt=""
+              alt="HGT firmasının logosu"
               width={210}
               height={60}
               className="mb-full mx-auto inline lg:ml-auto"
