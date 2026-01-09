@@ -54,7 +54,7 @@ export default function Service() {
                   <div className="h-36 w-full overflow-hidden rounded-xl transition-all duration-300 ease-in lg:absolute lg:left-1/2 lg:w-80 lg:-translate-x-1/2 lg:scale-0 lg:rotate-3 lg:opacity-0 lg:group-hover:scale-100 lg:group-hover:opacity-100">
                     <Image
                       src={"/service-1.jpg"}
-                      alt="Thumbnail"
+                      alt="Uluslararası Yük Taşımacılığı Tır Filosu"
                       width={300}
                       height={150}
                       className="h-full w-full object-cover object-[43%_30.7%]"
@@ -82,7 +82,7 @@ export default function Service() {
                   <div className="h-36 w-full overflow-hidden rounded-xl transition-all duration-300 ease-in lg:absolute lg:left-1/2 lg:w-80 lg:-translate-x-1/2 lg:scale-0 lg:rotate-3 lg:opacity-0 lg:group-hover:scale-100 lg:group-hover:opacity-100">
                     <Image
                       src={"/service-2.jpg"}
-                      alt="Thumbnail"
+                      alt="Gümrüklü ve Gümrüksüz Depolama Hizmetleri"
                       width={300}
                       height={150}
                       className="h-full w-full object-cover object-[43%_30.7%]"
@@ -110,7 +110,7 @@ export default function Service() {
                   <div className="h-36 w-full overflow-hidden rounded-xl transition-all duration-300 ease-in lg:absolute lg:left-1/2 lg:w-80 lg:-translate-x-1/2 lg:scale-0 lg:rotate-3 lg:opacity-0 lg:group-hover:scale-100 lg:group-hover:opacity-100">
                     <Image
                       src={"/service-3.jpg"}
-                      alt="Thumbnail"
+                      alt="Transit ve Teminatlı Lojistik Çözümleri"
                       width={300}
                       height={150}
                       className="h-full w-full object-cover object-[43%_30.7%]"

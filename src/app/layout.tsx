@@ -8,6 +8,7 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hgttasimacilik.com"),
   title: {
     default: "HGT Taşımacılık | Hızlı ve Güvenli Lojistik",
     template: "%s | HGT Taşımacılık",
